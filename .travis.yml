@@ -33,7 +33,7 @@ script:
   - chmod +x gradlew
   - ./gradlew clean test
   - yarn test
-  - ./gradlew sonarqube --no-daemon -Dsonar.organization=deshetti-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+  - ./gradlew sonarqube --no-daemon -Dsonar.organization=deshetti-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=3281f95a7a06680aca118b603029842d35224020 --stacktrace
   - ./gradlew bootWar -Pprod -x test
 notifications:
   webhooks:
