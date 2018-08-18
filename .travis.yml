@@ -19,6 +19,7 @@ env:
     - NODE_VERSION=8.11.3
     - SPRING_OUTPUT_ANSI_ENABLED=ALWAYS
     - SPRING_JPA_SHOW_SQL=false
+    - SONAR_TOKEN = 9d2401997a7368e6f351d50d7d99bbf1fae84624
 before_install:
   - jdk_switcher use oraclejdk8
   - java -version
